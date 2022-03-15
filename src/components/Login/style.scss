@@ -1,0 +1,83 @@
+.background-div {
+   background-color: #eaeaea;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .main-div {
+    
+    background: rgb(141,153,255);
+background: linear-gradient(35deg, rgba(141,153,255,1) 60%, rgba(48,42,112,1) 100%);
+    min-height: 80vh;
+    border-radius: 20px;
+    box-shadow: 15px 24px 18px #888888;
+
+    .login-div {
+      border-radius: 20px 40% 135% 20px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: white;
+      padding-left: 50px;
+      box-shadow: 5px 10px 18px #888888;
+      .form-div {
+        width: 80%;
+        .heading {
+          color: #302A70;
+          text-align: center;
+        }
+        .input-div {
+          margin: 20px 0px;
+          .input-field {
+            border: 2px solid #6495ed;
+            border-radius: 20px;
+          }
+        }
+        .btn-div {
+          display: flex;
+          justify-content: center;
+          .form-btn {
+            width: 75%;
+            border-radius: 30px;
+            background-color: #302A70;
+            border: 1px solid #302A70;
+          }
+          .form-btn:focus{
+              box-shadow: none;
+          }
+        }
+      }
+    }
+    .logo-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .logo-img {
+        width: inherit;
+      }
+      .quote {
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .main-div {
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    .login-div {
+      border-radius: 0px !important;
+      padding: 20px;
+      justify-content: center !important;
+    }
+    .logo-img {
+      width: 50% !important;
+    }
+    .quote {
+      font-size: 18px;
+    }
+  }
+}
